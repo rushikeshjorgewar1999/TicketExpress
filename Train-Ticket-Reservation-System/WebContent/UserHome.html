@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TicketExpress - your sweet spot for Train ticket booking</title>
+<!-- <link rel="stylesheet" href="UserHome_Css.css"> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<body>
+	<header class="text-bg-dark">
+		<div class="container">
+			<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+			  <div class="col-md-3 mb-2 mb-md-0 text-light">
+				<a href="/" class="text-light d-inline-flex link-body-emphasis text-decoration-none">
+				  TicketExpress
+				</a>
+			  </div>
+		
+			  <ul class="nav col-12 col-md-auto mb-2 justiftey-content-center mb-md-0">
+				<li><a href="UserHome.html" class="nav-link px-2 text-light">Home</a></li>
+				<li><a href="SearchTrains.html" class="nav-link px-2 text-light">Search Trains</a></li>
+				<li><a href="Fare.html" class="nav-link px-2 text-light">Enquiry</a></li>
+				<li><a href="Availability.html" class="nav-link px-2 text-light">Check Availability</a></li>
+				<li><a href="#" class="nav-link px-2 text-light">About</a></li>
+			  </ul>
+		
+			  <div class="col-md-3 text-end">
+				<button type="button" class="btn btn-light me-2"><a href="UserLogin.html" class="text-dark">Login</a></button>
+				<button type="button" class="btn btn-light"><a href="UserRegister.html" class="text-dark">Register</a></button>
+			  </div>
+			</header>
+		  </div>
+	</header>
+
+	<div class="container-sm">
+		<div class="row align-items-center g-lg-5 py-5">
+			<div class="col-lg-7 text-center text-lg-start">
+				<h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Streamline Your Train Journey with <span class="text-danger">TicketExpress</span></h1>
+				<p class="col-lg-10 fs-4">TicketExpress streamlines your train journey with easy online booking, real-time schedules, and secure features. Travel hassle-free with us.</p>
+			</div>
+			<div class="col-md-10 mx-auto col-lg-5 text-center">
+				<form action="searchtrainservlet" method="post" class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+					<h2 class="h2">Search For Trains</h2>
+					<div class="form-floating mb-3">
+						<input type="text" name="trainnumber" class="form-control" placeholder="Enter the train number">
+						<label for="trainnumber">Train Number</label>
+					</div>
+					<input type="submit" class="btn w-50 btn-danger" value="SEARCH TRAIN"><br />
+					<hr class="my-4">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- <div class="container-xl text-center "><h1>Streamline Your Train Journey with <span class="text-danger">TicketExpress</span> Ticket Booking</h1></div> -->
+
+
+
+	<div class="container px-4 py-5 text-start">
+		<h2 class="pb-2 border-bottom text-center">See What TicketExpress Can Do For You</h2>
+	
+		<div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+		  <div class="col d-flex flex-column align-items-start gap-2">
+			<h2 class="fw-bold text-body-emphasis">Simplify Your Journey with Effortless Train Ticket Booking</h2>
+			<p class="text-body-secondary">Simplify your travel experience with our effortless train ticket booking system. Enjoy seamless reservations and a hassle-free journey with just a click.</p>
+			<a href="BookTrains.html" class="btn btn-danger btn-lg">Book Tickets</a>
+		  </div>
+	
+		  <div class="col">
+			<div class="row row-cols-1 row-cols-sm-2 g-4">
+			  <div class="col d-flex flex-column gap-2">
+				<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				  <svg class="bi" width="1em" height="1em">
+					<use xlink:href="#collection"></use>
+				  </svg>
+				</div>
+				<h4 class="fw-semibold mb-0 text-body-emphasis">Search Trains</h4>
+				<p class="text-body-secondary">Easily locate your desired train by its unique train number.</p>
+			  </div>
+	
+			  <div class="col d-flex flex-column gap-2">
+				<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				  <svg class="bi" width="1em" height="1em">
+					<use xlink:href="#gear-fill"></use>
+				  </svg>
+				</div>
+				<h4 class="fw-semibold mb-0 text-body-emphasis">Check Seat Availability</h4>
+				<p class="text-body-secondary">"Check seat availability in real-time to secure your spot on the desired train."</p>
+			  </div>
+	
+			  <div class="col d-flex flex-column gap-2">
+				<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				  <svg class="bi" width="1em" height="1em">
+					<use xlink:href="#speedometer"></use>
+				  </svg>
+				</div>
+				<h4 class="fw-semibold mb-0 text-body-emphasis">Fare Enquiry</h4>
+				<p class="text-body-secondary">Get accurate fare information for your train journey with our convenient fare enquiry feature.</p>
+			  </div>
+	
+			  <div class="col d-flex flex-column gap-2">
+				<div class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+				  <svg class="bi" width="1em" height="1em">
+					<use xlink:href="#table"></use>
+				  </svg>
+				</div>
+				<h4 class="fw-semibold mb-0 text-body-emphasis">Trains Between Stations</h4>
+				<p class="text-body-secondary">Easily find trains between your desired stations for a hassle-free journey.</p>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<!-- <div class="tab green">User Login</div>
+	<form action="userlogin" class="tab brown" method="post">
+		<br /> UserName: <input type="text" name="uname"
+			placeholder="Enter Your EmailId"> <br /> <br /> Password: <input
+			type="password" name="pword"> <br /> <br /> <input
+			type="submit" value=" LOGIN "><br />
+
+	</form>
+	<br /> -->
+
+	<!-- FAQ SECTION -->
+
+	<div class="container-xl text-center">
+
+		<div class="container-sm">
+			<h2>Frequently Asked Questions</h2>
+		</div>
+
+		<div class="accordion" id="accordionExample">
+		<div class="accordion-item">
+		  <h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				<strong>How can I complete an online train ticket booking with TicketExpress?</strong>
+			</button>
+		  </h2>
+		  <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+			  Booking a train ticket online can be completed with ease in just a few simple steps. If you’re on the app, first click on the “redRails” icon that’s displayed on your screen. Enter the source and destination locations along with the date of travel. Once done, a list of trains operating on your route will be displayed. Select the train and class of your choice, select the boarding and destination stations, enter the details of the passenger and complete the payment. You can download the ticket and the invoice once your payment has been processed.
+			</div>
+		  </div>
+		</div>
+
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+			  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				  <strong>Should I book my train ticket in advance?
+				</strong>
+			  </button>
+			</h2>
+			<div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+			  <div class="accordion-body">
+				Booking a train ticket online can be completed with ease in just a few simple steps. If you’re on the app, first click on the “redRails” icon that’s displayed on your screen. Enter the source and destination locations along with the date of travel. Once done, a list of trains operating on your route will be displayed. Select the train and class of your choice, select the boarding and destination stations, enter the details of the passenger and complete the payment. You can download the ticket and the invoice once your payment has been processed.
+			  </div>
+			</div>
+		  </div>
+		  
+
+		<div class="accordion-item">
+		  <h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			<strong> How do I pay for my online train ticket booking that is made through TicketExpress?</strong>
+			</button>
+		  </h2>
+		  <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				You can complete your online train ticket booking by using any of the variety of payment options that are available at your disposal. Customers can use any amount that’s remaining in their TicketExpress wallet, credit or debit cards, Wallets such as Amazon Pay or through UPI payment gateways such as GooglePay, PhonePe, etc. Payments made online on TicketExpress are safe and secure and eliminate the need to wait in a queue.
+			</div>
+		  </div>
+		</div>
+		<div class="accordion-item">
+		  <h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				<strong>What are some of the advantages of booking a train ticket with TicketExpress?</strong>
+			</button>
+		</h2>
+		<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				One of the key advantages of making an online train ticket booking with redRails is convenience. In the current environment where safety is a priority, customers can view, select, and make their payments online from the comfort of their homes. redRails displays vital information pertaining to their train journey.
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+	<footer class="text-bg-dark">
+
+		<!-- <address id="cent">
+			Contact: Mr. Shashi Raj<br />Email:<a href="mailto">Shashi@alumni.com</a><br />PhoneNo:
+			9547462319
+		</address> -->
+
+		<div class="container ">
+			<footer class="py-3 my-4 ">
+			  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+				<li class="nav-item"><a href="#" class="nav-link  px-2 text-body-light ">Home</a></li>
+				<li class="nav-item"><a href="#" class="nav-link  px-2 text-body-light">Features</a></li>
+				<li class="nav-item"><a href="#" class="nav-link  px-2 text-body-light">Pricing</a></li>
+				<li class="nav-item"><a href="#" class="nav-link  px-2 text-body-light">FAQs</a></li>
+				<li class="nav-item"><a href="#" class="nav-link  px-2 text-body-light">About</a></li>
+			  </ul>
+			  <p class="text-center text-body-light">© 2023 TicketExpress, Inc</p>
+			</footer>
+		  </div>
+
+	</footer>
+
+</body>
+</html>
